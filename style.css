@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #cbe0ff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.accordion {
+    width: 500px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+  }
+
+.accordion h1 {
+    margin: 20px;
+}
+
+.label {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: large;
+    color: #000;
+    cursor: pointer;
+}
+
+.accordion #label1::before {
+    content: '+';
+    color: #000;
+    top: 37.5%;
+    left: 98%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.accordion #label2::before {
+    content: '+';
+    color: #000;
+    top: 83%;
+    left: 98%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.accordion #label3::before {
+    content: '+';
+    color: #000;
+    top: 168%;
+    left: 98%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.accordion #label4::before {
+    content: '+';
+    color: #000;
+    top: 226.5%;
+    left: 98%;
+    font-size: 20px;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.accordion .content {
+    position: relative;
+    background: white;
+    height: 0;
+    font-size: 20px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+}
+
+.accordion .container.active .content {
+    width: 500px;
+    height: auto;
+}
+
+.accordion .container.active #label1::before {
+    content: '-';
+    font-size: 20px;
+}
+
+.accordion .container.active #label2::before {
+    content: '-';
+    font-size: 20px;
+}
+
+.accordion .container.active #label3::before {
+    content: '-';
+    font-size: 20px;
+}
+
+.accordion .container.active #label4::before {
+    content: '-';
+    font-size: 20px;
+}
